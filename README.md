@@ -22,7 +22,7 @@ Academia to Industry offers personalized support and strategic planning for acad
 
 ## Contact
 
-For more information or to use our services, please visit [our website](https://www.academiatoindustry.com) or contact us at info@academiatoindustry.com.
+For more information or to use our services, please visit [our website](https://www.academiatoindustry.com).
 
 ## License
 
