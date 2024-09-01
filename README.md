@@ -1,1 +1,1 @@
-# academiatoindustry
+# academia to industry
