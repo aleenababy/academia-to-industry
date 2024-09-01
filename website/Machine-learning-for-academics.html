@@ -7,9 +7,9 @@
 <html>
 	<head>
 		<title>Machine learning for academics</title>
-		<meta name="description" content="Explore our comprehensive Machine Learning lectures tailored for academics and researchers. Gain hands-on skills and deepen your understanding of ML concepts with expert-led sessions. Contact us for the syllabus and elevate your research capabilities">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Explore our comprehensive Machine Learning lectures tailored for academics and researchers. Gain hands-on skills and deepen your understanding of ML concepts with expert-led sessions. Contact us for the syllabus and elevate your research capabilities">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -17,10 +17,13 @@
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
-
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Academia to Industry</a></h1>
+						<!--<h1><a href="index.html">Academia to Industry</a></h1>-->
+						<a href="index.html" class="logo-link">
+							<img src="images/Academia-to-Industry-logo-white.png" alt="Academia to Industry Logo" class="logo-image">
+							<span class="logo-text">Academia to Industry</span>
+						  </a>
 						<nav id="nav">
 							<ul>
 								<li class="special">
@@ -33,7 +36,7 @@
 													<li><a href="phd-admission-consulting.html">Start your PhD</a></li>
 													<li><a href="graduate-school-life-management.html">Navigate your PhD</a></li>
 													<li><a href="transition-to-industry-after-phd.html">Bridge to Industry</a></li>
-													<li><a href="transition-to-industry-after-phd.html#life_of_an_expat">Expat life</a></li>
+													<li><a href="traveling-to-Germany.html">Expat life</a></li>
 													<li><a href="Machine-learning-for-academics.html">Machine learning</a></li>
 												  </ul>
 											</li>
@@ -52,8 +55,16 @@
 					<article id="main">
 						<header>
 							<h2>Machine learning </h2>
-							<p>Aliquam ut ex ut interdum donec amet imperdiet eleifend</p>
+							<p>From Fundamentals to Advanced Applications</p>
 						</header>
+						<div class="floating-buttons">
+							<a href="https://topmate.io/dr_aleena_baby/1023782" class="float-button calendar-btn">
+							  <i class="fas fa-calendar-check"></i>
+							</a>
+							<a href="https://topmate.io/dr_aleena_baby/1023781/pay" class="float-button message-btn">
+								<i class="fas fa-sms"></i>
+							</a>
+						</div>
 						<section class="wrapper style5">
 							<div class="inner">
 								<h3>Unlock the Potential of Machine Learning</h3>
@@ -63,44 +74,97 @@
 								
 								<a href="https://topmate.io/dr_aleena_baby/1023781/pay" class="button fit primary">Send a message</a>
 							</div>
-						</section>
-						<section id="three" class="wrapper style5">
-							<div class="inner">
-								<header class="major">
-									<h2>Syllabus</h2>
-								</header>
-								<ol>
-									Module 1:Introduction to Machine Learning
-			
-								</ol>
-								<ol>Module 2:Data Preprocessing and Exploration</ol>
-								<ol>Module 3: Supervised Learning Algorithms</ol>
-								<ol>Module 4: Unsupervised Learning Algorithms</ol>
-								<ol>Module 5: Model Evaluation and Optimization</ol>
-								<ol>Module 8: Ethical Considerations in AI and ML</ol>
-								<h2>Additional</h2>
-								<p>The following courses can be added along with the basics</p>
-								<ol>Introduction to Neural Networks and Deep Learning</ol>
-								<ol>Natural language processing (NLP)</ol>
-								<ol>Time series analysis</ol>
-
-							</div>
+							<section id="course-syllabus" class="wrapper style5">
+								<div class="syllabus">
+									<h2>Course Syllabus</h2>
+									
+									<div class="toggle-section">
+										<input type="checkbox" id="welcome-message" />
+										<label class="toggle-button" for="welcome-message">Welcome Message</label>
+										<div class="toggle-content">
+											<p>Welcome to our course! This syllabus outlines the structure and content of our program.</p>
+											<p>This Machine Learning course is designed to be entirely self-paced, allowing you to learn at your own speed and convenience. To gain access to the course videos, simply send us a message, and we'll provide you with all the necessary materials. If you're looking for a more tailored learning experience, don't hesitate to mention this in your message. We strive to make your learning journey as personalized as possible, especially when it comes to projects. Whether you prefer to work independently or desire more guided support, we're here to accommodate your learning style and help you achieve your Machine Learning goals. Our flexible approach ensures that you can balance your studies with other commitments while still receiving the level of support you need to succeed.</p>
+										</div>
+									</div>
+							
+									<div class="toggle-section">
+										<input type="checkbox" id="module-1-intro" />
+										<label class="toggle-button" for="module-1-intro">Module 1: Introduction to Machine Learning</label>
+										<div class="toggle-content">
+											<ol>
+												<li>What is Machine Learning and its types</li>
+												<li>ML workflow and common data preprocessing techniques</li>
+												<li>Setting up the development environment (Python, Jupyter Notebook, libraries)</li>
+												<li>Overview of ML applications in various industries</li>
+											</ol>
+										</div>
+									</div>
+							
+									<div class="toggle-section">
+										<input type="checkbox" id="module-2-data-preprocessing" />
+										<label class="toggle-button" for="module-2-data-preprocessing">Module 2: Data Preprocessing and Exploration</label>
+										<div class="toggle-content">
+											<ol>
+												<li>Exploratory Data Analysis using Pandas and NumPy</li>
+												<li>Data cleaning and handling missing values</li>
+												<li>Feature selection and engineering</li>
+												<li>Data visualization with Matplotlib and Seaborn</li>
+											</ol>
+										</div>
+									</div>
+							
+									<div class="toggle-section">
+										<input type="checkbox" id="module-3-supervised-learning" />
+										<label class="toggle-button" for="module-3-supervised-learning">Module 3: Supervised Learning Algorithms</label>
+										<div class="toggle-content">
+											<ol>
+												<li>Linear regression</li>
+												<li>Logistic regression</li>
+												<li>Decision trees and random forests</li>
+												<li>Naive Bayes</li>
+												<li>Evaluation metrics for classification (accuracy, precision, recall, F1-score, ROC/AUC)</li>
+											</ol>
+										</div>
+									</div>
+									<div class="toggle-section">
+										<input type="checkbox" id="module-4-unsupervised-learning" />
+										<label class="toggle-button" for="module-4-unsupervised-learning">Module 4: Unsupervised Learning Algorithms</label>
+										<div class="toggle-content">
+											<ol>
+												<li>K-means clustering</li>
+												<li>Principal Component Analysis(PCA)</li>
+												<li>Dimensionality reduction techniques</li>
+											</ol>
+										</div>
+									</div>
+									<div class="toggle-section">
+										<input type="checkbox" id="module-5-model-evaluation" />
+										<label class="toggle-button" for="module-5-model-evaluation">Module 5: Model Evaluation and Optimization</label>
+										<div class="toggle-content">
+											<ol>
+												<li>Ensemble methods</li>
+												<li>End-to-end ML project</li>
+												<li>Feature selection and engineering</li>
+											</ol>
+										</div>
+									</div>
+								</div>
+							</section>
 						</section>
 					</article>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy;academia-to-industry</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/Academiatoindustry/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/academia_to_industry?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href=" https://www.linkedin.com/in/aleena-baby/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://topmate.io/dr_aleena_baby/1023781/pay" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy;2024 academiatoindustry</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
 
 			</div>
 

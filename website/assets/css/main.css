@@ -179,7 +179,7 @@ input, select, textarea {
 	h2 {
 		font-size: 1.35em;
 		line-height: 1.75em;
-		text-transform: capitalize;
+		
 	}
 
 		@media screen and (max-width: 736px) {
@@ -1764,7 +1764,25 @@ input, select, textarea {
 		position: relative;
 		top: -0.25em;
 	}
-
+	.logo-link {
+		display: inline-flex;
+		align-items: center;
+		text-decoration: none !important;
+		text-decoration-skip: inkbox;
+		color: inherit;
+	  }
+	  
+	  .logo-image {
+		width: 60px; /* Adjust as needed */
+		height: auto;
+		margin-right: 10px;
+	  }
+	  
+	  .logo-text {
+		font-weight: bold;
+		font-size: 18px; /* Adjust as needed */
+	  }	  
+	  
 	header h3 + p {
 		font-size: 1.1em;
 	}
@@ -3928,31 +3946,123 @@ input, select, textarea {
 		background-attachment: scroll;
 	}
 	/*Floating menu*/
-	.float-button {
+	.floating-buttons {
 		position: fixed;
 		bottom: 20px;
 		right: 20px;
-		background-color: #007bff;
+		z-index: 1000;
+	  }
+	  
+	  .float-button {
+		display: inline-block;
+		margin-right: 10px;
+		background-color: #4CAF50;
 		color: white;
-		border-radius: 50%;
-		width: 60px;
-		height: 60px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 24px;
+		border: none;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 34px;
+		cursor: pointer;
+		border-radius: 25px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		transition: all 0.3s ease;
+	  }
+	  
+	  .float-button:hover {
+		background-color: #45a049;
+	  }
+	  
+	  .calendar-btn {
+		background-color: #f8b400; /* Orange color */
+		font-size: 34px;
+	  }
+	  
+	  .message-btn {
+		background-color: #2196F3; /* Blue color */
+		font-size: 34px;
+	  }
+	  
+	
+	
+	.syllabus {
+		max-width: 800px;
+		margin: 0 auto;
+		padding: none;
+	  }
+	  
+	  .toggle-section {
+		margin-bottom: 15px;
+	  }
+	  
+	  .toggle-button {
+		background-color:transparent;
+		color: white;
+		border: none;
+		padding: 10px 15px;
+		width: 100%;
+		text-align: left;
+		font-size: 16px;
 		cursor: pointer;
 		transition: background-color 0.3s ease;
-		z-index: 9999;
-	}
-	
-	.float-button:hover {
-		background-color: #0056b3;
-	}
-	
-	.float-button i {
-		margin: 0;
-	}
+	  }
+	  
+	  .toggle-button:hover,
+	  .toggle-button:focus {
+		background-color: #f62229b0;
+	  }
+	  
+	  .toggle-content {
+		display: none;
+		padding-left: 20px;
+		margin-top: 5px;
+	  }
+	  
+	  .toggle-content ul,
+	  .toggle-content ol {
+		list-style-type: disc;
+		padding-left: 20px;
+	  }
+	  
+	  .toggle-content p {
+		line-height: 1.5;
+	  }
+	  
+	  /* Style for active toggle button */
+	  .active-toggle {
+		background-color: #b7cadd;
+	  }
+	  
+	  /* Checkbox hack for toggling */
+	  input[type="checkbox"] {
+		display: none;
+	  }
+	  
+	  input[type="checkbox"]:checked ~ .toggle-content {
+		display: block;
+	  }
+	  
+	  input[type="checkbox"]:checked + label {
+		background-color: #bda4cc;
+	  }
+	.search-container {
+		width: 300px;
+		margin: 20px auto;
+	  }
+	  
+	  #search-input {
+		width: 100%;
+		padding: 10px;
+		font-size: 16px;
+	  }
+	  
+	  #search-results {
+		margin-top: 10px;
+		padding: 10px;
+		border: 1px solid #ddd;
+		border-radius: 5px;
+	  }  
+	  
 
 /* Footer */
 
@@ -4036,7 +4146,7 @@ input, select, textarea {
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(3, 5, 35, 0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
