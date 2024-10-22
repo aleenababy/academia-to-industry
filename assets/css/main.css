@@ -38,13 +38,18 @@ ol, ul {
 }
 
 blockquote, q {
-	quotes: none;
+    quotes: none;
+    background-color: #174d9dd3; /* Light gray background */
 }
 
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+
 
 table {
 	border-collapse: collapse;
@@ -71,6 +76,7 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+
 
 /* Basic */
 
