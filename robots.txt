@@ -1,0 +1,3 @@
+Sitemap: https://academiatoindustry.com/sitemap.xml
+User-agent: *
+Disallow:
