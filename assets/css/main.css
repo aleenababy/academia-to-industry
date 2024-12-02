@@ -3988,8 +3988,69 @@ input, select, textarea {
 		background-color: #2196F3; /* Blue color */
 		font-size: 34px;
 	  }
-	  
-	
+	/*services menu*/  
+	.services-section {
+        background-color: #f8f9fa;
+        padding: 50px 20px;
+    }
+
+    .service-packages {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .package-item {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: calc(23% - 40px);
+        transition: transform 0.3s ease-in-out;
+        position: relative;
+    }
+
+    .package-item.light-bg {
+        background-color: #e6f3ff;
+    }
+
+    .package-item.dark-bg {
+        background-color: #f0f0f0;
+    }
+
+    .package-icon {
+        position: absolute;
+        top: -20px;
+        left: 20px;
+        font-size: 24px;
+        color: #007bff;
+    }
+
+    .package-item:hover {
+        transform: translateY(-10px);
+    }
+
+    .package-item h3 {
+        color: #333;
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+
+    i {
+        color: #007bff;
+        margin-right: 5px;
+    }
 	
 	.syllabus {
 		max-width: 800px;
